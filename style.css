@@ -45,7 +45,12 @@ a:hover {
 }
 
 .bloc-lg {
+    width: 95%;
     padding: 100px 50px;
+}
+
+.bloc-lg h2 {
+    margin-bottom: 40px;
 }
 
 .bloc-md {
@@ -54,6 +59,7 @@ a:hover {
 
 .bloc-sm {
     padding: 20px 50px;
+    width: 50%;
 }
 
 .bg-center,
@@ -128,7 +134,7 @@ a:hover {
 .d-bloc h5 a,
 .d-bloc h6 a,
 .d-bloc p a {
-    color: rgba(255, 255, 255, .6);
+    color: rgb(0, 0, 0);
 }
 
 .d-bloc .a-btn:hover,
@@ -283,7 +289,9 @@ a:hover {
 }
 
 #bloc-6 {
-    border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .navbar {
@@ -439,7 +447,6 @@ nav .caret {
     margin-top: 10px;
     margin-bottom: 20px;
 }
-
 .mg-lg {
     margin-top: 10px;
     margin-bottom: 40px;
@@ -651,7 +658,7 @@ label,
 a {
     font-family: "helvetica";
     font-weight: 400;
-    color: #575757!important;
+    color: #000000!important;
 }
 
 .container {
@@ -810,10 +817,6 @@ h4 {
     border-color: #364577!important;
 }
 
-.bg-dots-bg {
-    background-image: url("img/dots-bg.png");
-}
-
 .bg-lines-h2-bg {
     background-image: url("img/lines-h2-bg.png");
 }
@@ -915,7 +918,6 @@ h4 {
         float: none!important;
     }
     .navbar.row {
-        margin-left: 0;
         margin-right: 0;
     }
     .site-navigation {
@@ -1036,6 +1038,7 @@ h4 {
     .bloc {
         padding-left: 0;
         padding-right: 0;
+        width: 100%;
     }
 }
 
