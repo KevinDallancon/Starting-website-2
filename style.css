@@ -31,7 +31,7 @@ a:hover {
     width: 100%;
     clear: both;
     background: 50% 50% no-repeat;
-    padding: 0 50px;
+    padding: 0;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -88,11 +88,6 @@ a:hover {
     bottom: 0;
     left: 0;
     right: 0;
-}
-
-.texture-paper::before {
-    background: url("img/texture-paper.webp");
-    background-size: 280px 280px;
 }
 
 .b-parallax {
@@ -287,9 +282,14 @@ a:hover {
     font-size: 32px;
 }
 
+#bloc-6 {
+    border: 2px solid red;
+}
+
 .navbar {
     margin-bottom: 0;
     z-index: 1;
+    width: 100%;
 }
 
 .navbar-brand {
@@ -655,7 +655,7 @@ a {
 }
 
 .container {
-    max-width: 1000px;
+    max-width: 100%;
 }
 
 .hero-bloc-text {
@@ -673,7 +673,7 @@ a {
     text-align: center;
     font-weight: lighter;
     max-width: 520px;
-    margin: auto auto auto auto;
+    margin: auto;
 }
 
 p {
@@ -682,7 +682,7 @@ p {
 
 .tight-width-whitespace {
     max-width: 600px;
-    margin: auto auto auto auto;
+    margin: auto;
 }
 
 .h1 {
@@ -701,12 +701,13 @@ p {
 
 .social {
     max-width: 400px;
-    margin: auto auto auto auto;
+    margin: auto;
 }
 
 h2 {
     font-size: 22px;
     line-height: 1.4em;
+    color: black;
 }
 
 h3 {
@@ -922,6 +923,7 @@ h4 {
         transform: none;
         -webkit-transform: none;
         -ms-transform: none;
+        border: 1px solid black;
     }
     .nav > li {
         margin-top: 0;
@@ -930,9 +932,11 @@ h4 {
         text-align: left;
         padding-left: 15px;
         width: 100%;
+        
     }
     .nav > li:hover {
         background: rgba(0, 0, 0, .08);
+        
     }
     .dropdown .dropdown a .caret {
         float: none;
