@@ -96,12 +96,16 @@ a:hover {
     right: 0;
 }
 
+.form-ctrl { 
+    width: auto;
+}
 .b-parallax {
     background-attachment: fixed;
 }
 
 .d-bloc {
     color: rgba(255, 255, 255, .7);
+    height: auto;
 }
 
 .d-bloc button:hover {
@@ -292,6 +296,11 @@ a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+#bloc-8 {
+    width: 100%;
+    height: auto;
 }
 
 .navbar {
@@ -707,8 +716,10 @@ p {
 }
 
 .social {
-    max-width: 400px;
-    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
 }
 
 h2 {
@@ -1046,4 +1057,5 @@ h4 {
     .bloc-mob-center-text {
         text-align: center;
     }
+
 }
