@@ -267,7 +267,9 @@ a:hover {
 .voffset-lg {
     margin-top: 80px;
 }
-
+.row {
+    width: 100%;
+}
 .row-no-gutters {
     margin-right: 0;
     margin-left: 0;
@@ -545,7 +547,6 @@ a[data-lightbox] {
 
 a[data-lightbox]:hover::before {
     content: "+";
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial;
     font-size: 32px;
     width: 50px;
     height: 50px;
@@ -656,7 +657,6 @@ p,
 label,
 .btn,
 a {
-    font-family: "helvetica";
     font-weight: 400;
     color: #000000!important;
 }
@@ -688,10 +688,6 @@ p {
     margin: auto;
 }
 
-.h1 {
-    font-size: 20px;
-    font-family: "Open Sans";
-}
 
 .cta-hero {
     margin-top: 22px;
@@ -706,6 +702,12 @@ p {
     display: flex;
     justify-content: space-between;
     width: 100%;
+}
+
+.col-sm-12 img {
+    width: 100px;
+    height: 100px;
+
 }
 
 h2 {
@@ -740,10 +742,18 @@ h4 {
     margin-top: 24px;
 }
 
+.logo-nav { 
+    width: 100%;
+}
 .white {
     color: #FFFFFF!important;
 }
 
+
+.img-responsive {
+    width: 100%;
+    height: auto;
+}
 .portfolio-thumb {
     margin-bottom: 24px;
 }
@@ -825,6 +835,9 @@ h4 {
 
 .bg-presentation {
     background-image: url("img/image-de-presentation.webp");
+}
+.part-ann {
+    border: 2px solid red;
 }
 
 @media (max-width: 1024px) {
