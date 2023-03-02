@@ -260,6 +260,15 @@ a:hover {
     border-color: rgba(0, 0, 0, .3);
 }
 
+li {
+    color: #000000;
+}
+
+select {
+    background-color: #F3976C;
+    border-radius: 20px;
+    border: none;
+}
 .voffset {
     margin-top: 30px;
 }
