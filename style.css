@@ -836,9 +836,6 @@ h4 {
 .bg-presentation {
     background-image: url("img/image-de-presentation.webp");
 }
-.part-ann {
-    border: 2px solid red;
-}
 
 @media (max-width: 1024px) {
     .bloc {
