@@ -50,7 +50,7 @@ a:hover {
 
 .bloc-sm {
   padding: 20px 50px;
-  width: 50%;
+  width: 100%;
 }
 
 .bg-center,
@@ -747,10 +747,6 @@ h4 {
   margin-top: 24px;
 }
 
-.logo-nav {
-  width: auto;
-  height: auto;
-}
 .white {
   color: #ffffff !important;
 }
@@ -869,6 +865,7 @@ h4 {
   .b-parallax {
     background-attachment: scroll;
   }
+
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1366px) and (max-resolution: 1.5) {
