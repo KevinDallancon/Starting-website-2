@@ -28,7 +28,7 @@
 	<div class="container bloc-sm">
 		<nav class="navbar row">
 		<div class="navbar-header">
-			<a class="navbar-brand" href="index.html"><img class="logo-nav" src="img/agence-la-panthere-monochrome.webp" alt="Logo La Panthère" height="40"/></a>
+			<a class="navbar-brand" href="index.html"><img class="logo-nav" src="img/agence-la-panthere-monochrome.webp" alt="Logo La Panthère" height="40"></a>
 			<button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1">
 			<span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
 			</button>
@@ -62,39 +62,30 @@
 		<div class="row">
 			<div class="col-sm-6">
 				<h3>Ecrivez nous</h3>
-				<form id="form_1" class="form-ctrl" novalidate success-msg="Your message has been sent." fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
+				<form id="form_1" class="form-ctrl">
 					<div class="form-group">
-						<label for="name">
-							Nom
-						</label>
-						<input id="name" class="form-control" required />
+					  <label for="name">Nom</label>
+					  <input id="name" class="form-control" name="name" required>
 					</div>
 					<div class="form-group">
-						<label for="email">
-							Adresse email
-						</label>
-						<input id="email" class="form-control" type="email" required />
+					  <label for="email">Adresse email</label>
+					  <input id="email" class="form-control" type="email" name="email" required>
 					</div>
 					<div class="form-group">
-						<label for="input">
-							Comment nous avez-vous connu ?
-						</label>
-							<select class="form-control" id="comment-connu">
-							  <option value="">Choisissez une option</option>
-							  <option value="recherche-web">Recherche sur le web</option>
-							  <option value="réseaux-sociaux">Réseaux sociaux</option>
-							  <option value="recommandation">Recommandation</option>
-							  <option value="autre">Autre</option>
-							</select>
+						<label for="comment-connu">Comment nous avez-vous connu ?</label>
+					  <select class="form-control" id="comment-connu" name="comment-connu">
+						<option value="">Choisissez une option</option>
+						<option value="recherche-web">Recherche sur le web</option>
+						<option value="réseaux-sociaux">Réseaux sociaux</option>
+						<option value="recommandation">Recommandation</option>
+						<option value="autre">Autre</option>
+					  </select>
 					</div>
 					<div class="form-group">
-						<label for="message">
-							Brief de votre projet (Ajoutez autant de détails que nécessaire)<br>
-						</label><textarea id="message" class="form-control" rows="4" cols="50" required></textarea>
+					  <label for="message">Brief de votre projet (Ajoutez autant de détails que nécessaire)<br></label>
+					  <textarea id="message" class="form-control" name="message" rows="4" cols="50" required></textarea>
 					</div> 
-					<button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine" type="submit">
-						Envoyer
-					</button>
+					<button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine" type="submit">Envoyer</button>
 				</form>
 			</div>
 			<div class="col-sm-6">
@@ -104,7 +95,7 @@
 					2 place Sathonay 69001 Lyon<br>
 					Ouvert de 9h à 18h, du lundi au vendredi
 				</address>
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2783.083137370331!2d4.827973251008349!3d45.7695240790032!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4eb020f3664e9%3A0x13e3d71752922c1f!2s2%20Pl.%20Sathonay%2C%2069001%20Lyon!5e0!3m2!1sfr!2sfr!4v1677235013727!5m2!1sfr!2sfr" width="80%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Plan de l'agence"></iframe>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2783.083137370331!2d4.827973251008349!3d45.7695240790032!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4eb020f3664e9%3A0x13e3d71752922c1f!2s2%20Pl.%20Sathonay%2C%2069001%20Lyon!5e0!3m2!1sfr!2sfr!4v1677235013727!5m2!1sfr!2sfr" width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Plan de l'agence"></iframe>
 			</div>
 		</div>
 	</div>
@@ -160,17 +151,17 @@
 					<div class="col-sm-4">
 						<h3>Annuaires liste 1</h3>
 						<ul>
-							<li><a href="#">annuaireagence.com</a></li>
-							<li><a href="#">annuaireseo.com</a></li>
-							<li><a href="#">annuairemarketing.com</a></li>
+							<li><a href="annuaireagence">annuaireagence.com</a></li>
+							<li><a href="annuaireseo">annuaireseo.com</a></li>
+							<li><a href="annuairemarketing">annuairemarketing.com</a></li>
 							<li class="liste-deroulante">
 								<select name="liste-deroulante-annuaire-1">
-									<option><a href="#">123seo.com</a></option>
-									<option><a href="#">123site.com</a></option>
-									<option><a href="#">annuairewordpress.com</a></option>
-									<option><a href="#">listeagence.com</a></option>
-									<option><a href="#">meilleuresagencesparis.com</a></option>
-									<option><a href="#">listeseo.com</a></option>
+									<option value="123seo">123seo.com</option>
+									<option value="123site">123site.com</option>
+									<option value="wordpress">annuairewordpress.com</option>
+									<option value="listeagence">listeagence.com</option>
+									<option value="meilleuresagences">meilleuresagencesparis.com</option>
+									<option value="listeseo">listeseo.com</option>
 								</select>
 							</li>
 						</ul>
@@ -183,12 +174,12 @@
 							<li><a href="#">seojuicelien.com</a></li>
 							<li class="liste-deroulante">
 								<select name="liste-deroulante-annuaire-2">
-								<option><a href="#">meilleursliens.com</a></option>
-								<option><a href="#">liensagogo.com</a></option>
-								<option><a href="#">backlink.com</a></option>
-								<option><a href="#">linkjuiceannuaire.com</a></option>
-								<option><a href="#">remontersurgoogle.com</a></option>
-								<option><a href="#">vraiseofiable.com</a></option>
+									<option value="meilleursliens">meilleursliens.com</option>
+									<option value="liensagogo">liensagogo.com</option>
+									<option value="backlink">backlink.com</option>
+									<option value="linkjuiceannuaire">linkjuiceannuaire.com</option>
+									<option value="remontersurgoogle">remontersurgoogle.com</option>
+									<option value="vraiseofiable">vraiseofiable.com</option>
 								</select>
 							</li>
 						</ul>
